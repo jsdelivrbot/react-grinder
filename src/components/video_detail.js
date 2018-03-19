@@ -25,8 +25,7 @@ class EventClick extends Component {
 
   picturesToggling() {
     this.counter++;
-    // console.log(this.counter%2===0);
-    
+       
     if (this.counter%2===0) {
       this.picToggled = 'https://whyevolutionistrue.files.wordpress.com/2017/06/happy-cat.jpg';
       this.setState({ picSrc: this.picToggled });      
