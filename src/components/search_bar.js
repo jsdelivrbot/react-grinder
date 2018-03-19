@@ -1,24 +1,14 @@
-import React, { Component } from 'react';
-
-class SearchBar extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { term: '' };
-
-  }
+import React, { Component } from 'react'
 
 
-  render() {
-    return (
-      <div>
-        <input
-        value = {this.state.term}
-        onChange = {event => this.setState({ term: event.target.value })}
-        />
-        
-      </div>      
-    );      
-  }
-}
-export default SearchBar;
+const Zdje = () => {
+  let pic = "https://royalcanin.pl/blog/wp-content/uploads/2016/12/176W-950x633.jpeg";
+  return <img src={pic} className="kotek" />
+};
+
+
+
+
+
+export default Zdje;
+

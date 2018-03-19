@@ -1,43 +1,32 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import YTSearch from 'youtube-api-search'
-import SearchBar from './components/search_bar';
-const API_KEY = 'AIzaSyBTRJqPyRnIc3s4Vynm9Jl82sXtdqMRT8E';
+import ReactDOM from 'react-dom'; 
+import Zdje from './components/search_bar';
+import EventClick from './components/video_detail';
 
 
-
-
-
-class App extends Component {
-  constructor(props){
+class Klikacz extends Component {
+  constructor(props) {
     super(props);
 
-    this.state = { videos: [] };
-
-    YTSearch({key: API_KEY, term: 'x220'}, (data) => {
-      this.setState({ videos: data });      
-    }); 
-
-    console.log(this.state.videos);
-    
+    this.state = { click: ''};
   }
-    
-  
 
   render() {
     return (
       <div>
-        <SearchBar />
-        
+        <Zdje />
+        <EventClick />
       </div>
-    );
-    
+    ); 
+
   }
+
+
 }
 
 
-
+ 
 
 ReactDOM.render(
-  <App />, document.querySelector('.container')
+  <Klikacz />, document.querySelector('.container')
 );
