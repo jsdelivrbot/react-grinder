@@ -4,10 +4,10 @@ class SearchBar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { term: 'kiki' };
+    this.state = { term: '' };
 
   }
-
+ 
 
   render() {
     return (
@@ -19,6 +19,6 @@ class SearchBar extends Component {
         
       </div>      
     );      
-  }
+  } 
 }
 export default SearchBar;
