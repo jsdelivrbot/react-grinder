@@ -18,11 +18,7 @@ class EventClick extends Component {
     );
   }
 
-  handleClick() {
-    this.setState({ picSrc: this.picToggled })
-
-  }
-
+  
   picturesToggling() {
     this.counter++;
        
@@ -32,12 +28,8 @@ class EventClick extends Component {
     } else {
         this.picToggled = 'https://ksassets.timeincuk.net/wp/uploads/sites/55/2018/01/Grumpy-Cat-920x584.jpg';
         this.setState({ picSrc: this.picToggled });
-      }
-    
-    
-    
+      }    
   }
-
 }
 
 

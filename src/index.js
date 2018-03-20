@@ -20,12 +20,7 @@ class Klikacz extends Component {
     ); 
 
   }
-
-
 }
-
-
- 
 
 ReactDOM.render(
   <Klikacz />, document.querySelector('.container')
