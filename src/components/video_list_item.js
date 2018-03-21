@@ -9,7 +9,7 @@ const VideoListItem = ({video}) => {
         <img src={imageURL} alt="yt_thumb" className="media-object" />
       </div>
       <div className="media-body">
-        <div className="media-heading">{video.snippet.title}</div>
+        <div className="media-heading">{video.snippet}</div>
       </div>
     </div>  
   </li>
