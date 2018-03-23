@@ -25,6 +25,6 @@ const VideoDetail = ({video}) => {
     </div>
   )
 };
-
+//test
 
 export default VideoDetail;
