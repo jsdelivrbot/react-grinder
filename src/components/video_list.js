@@ -2,8 +2,16 @@ import React from 'react';
 import VideoListItem from './video_list_item';
 
 const VideoList = (props) => {  
+  
+  
+  
   const videoItems = props.videos.map((video) => {
-    return <VideoListItem key={video.etag}  video = {video} />
+    return ( 
+      <VideoListItem 
+        onVideoClick = {props.onVideoSelect}
+        key={video.etag}
+        video = {video} />
+    );
   });
   
   return (
@@ -13,4 +21,4 @@ const VideoList = (props) => {
   ); 
 }
 
-export default VideoList
+export default VideoList;
